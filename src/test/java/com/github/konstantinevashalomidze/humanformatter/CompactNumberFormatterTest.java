@@ -78,7 +78,7 @@ class CompactNumberFormatterTest {
 
     @Test
     void formatThrowsWhenValueIsLongMIN_VALUE() {
-        assertThrows(InvalidInputException.class, () -> CompactNumberFormatter.format(Long.MIN_VALUE));
+        assertThrows(HumanFormatterInputException.class, () -> CompactNumberFormatter.format(Long.MIN_VALUE));
     }
 
 

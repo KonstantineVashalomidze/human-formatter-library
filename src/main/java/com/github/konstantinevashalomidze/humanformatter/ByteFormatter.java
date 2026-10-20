@@ -8,7 +8,7 @@ public final class ByteFormatter {
 
     public static String format(long _byte) {
         if (Long.MIN_VALUE == _byte) {
-            throw new InvalidInputException("_byte value shouldn't equal -9_223_372_036_854_775_808");
+            throw new HumanFormatterInputException("_byte value shouldn't equal -9_223_372_036_854_775_808");
         }
 
         int sign = (_byte < 0) ? -1 : 1;

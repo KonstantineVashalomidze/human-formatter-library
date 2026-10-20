@@ -60,7 +60,7 @@ class ByteFormatterTest {
 
     @Test
     void formatThrowsOnLongMinValue() {
-        assertThrows(InvalidInputException.class, () -> ByteFormatter.format(Long.MIN_VALUE));
+        assertThrows(HumanFormatterInputException.class, () -> ByteFormatter.format(Long.MIN_VALUE));
     }
 
     @Test

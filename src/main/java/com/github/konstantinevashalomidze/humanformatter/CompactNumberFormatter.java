@@ -9,7 +9,7 @@ public final class CompactNumberFormatter {
 
     public static String format(long number) {
         if (Long.MIN_VALUE == number) {
-            throw new InvalidInputException("number value shouldn't equal -9_223_372_036_854_775_808");
+            throw new HumanFormatterInputException("number value shouldn't equal -9_223_372_036_854_775_808");
         }
 
         boolean isNegative = number < 0;

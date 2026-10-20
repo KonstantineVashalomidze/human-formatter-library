@@ -8,7 +8,7 @@ public final class DurationFormatter {
 
     public static String format(Duration duration) {
         if (duration.getSeconds() == Long.MIN_VALUE) {
-            throw new InvalidInputException("duration value shouldn't equal -9_223_372_036_854_775_808");
+            throw new HumanFormatterInputException("duration value shouldn't equal -9_223_372_036_854_775_808");
         }
 
         boolean isNegative = duration.isNegative();

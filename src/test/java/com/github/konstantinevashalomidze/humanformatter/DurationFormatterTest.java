@@ -60,7 +60,7 @@ class DurationFormatterTest {
 
     @Test
     void formatThrowsInvalidInputExceptionWhenLongMinValueIsGiven() {
-        assertThrows(InvalidInputException.class, () -> DurationFormatter.format(Duration.ofSeconds(Long.MIN_VALUE)));
+        assertThrows(HumanFormatterInputException.class, () -> DurationFormatter.format(Duration.ofSeconds(Long.MIN_VALUE)));
     }
 
 
