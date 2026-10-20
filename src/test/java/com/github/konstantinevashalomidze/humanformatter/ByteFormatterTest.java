@@ -97,4 +97,11 @@ class ByteFormatterTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void formatHandlesNegativeLongMaxValue() {
+        String actual = ByteFormatter.format(-Long.MAX_VALUE);
+        String expected = "-9.2 EB";
+        assertEquals(expected, actual);
+    }
+
 }
