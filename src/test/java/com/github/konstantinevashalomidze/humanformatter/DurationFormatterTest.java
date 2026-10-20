@@ -23,4 +23,12 @@ class DurationFormatterTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void formatReturnsNegative1m30sWhenNegative90DurationValueIsGiven() {
+        String actual = DurationFormatter.format(Duration.ofSeconds(-90));
+        String expected = "-1m 30s";
+
+        assertEquals(expected, actual);
+    }
+
 }
