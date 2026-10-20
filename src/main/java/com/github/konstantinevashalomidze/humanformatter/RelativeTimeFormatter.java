@@ -48,7 +48,7 @@ public final class RelativeTimeFormatter {
         return isNegative ? "in " + phrase(amount, unit) : phrase(amount, unit) + " ago";
     }
 
-    public static String phrase(long n, String unit) {
+    private static String phrase(long n, String unit) {
         if (n == 1) {
             return n + " " + unit;
         } else {
