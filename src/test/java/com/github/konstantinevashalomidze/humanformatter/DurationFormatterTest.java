@@ -15,6 +15,12 @@ class DurationFormatterTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void formatReturns1hWhen3_600DurationValueIsGiven() {
+        String actual = DurationFormatter.format(Duration.ofSeconds(3_600));
+        String expected = "1h";
 
+        assertEquals(expected, actual);
+    }
 
 }
