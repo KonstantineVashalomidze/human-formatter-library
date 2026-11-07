@@ -38,7 +38,7 @@ public final class ByteFormatter {
      * @param _byte the number of bytes; negative values are allowed
      * @return the formatted size, with a leading {@code -} for negative values
      * @throws HumanFormatterInputException if {@code _byte} is {@link Long#MIN_VALUE}
-     */cc
+     */
     public static String format(long _byte) {
         if (Long.MIN_VALUE == _byte) {
             throw new HumanFormatterInputException("_byte value shouldn't equal -9_223_372_036_854_775_808");
